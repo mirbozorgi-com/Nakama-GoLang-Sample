@@ -1,0 +1,50 @@
+data_dir: "./data/"
+
+logger:
+    level: DEBUG
+    
+meftrics:
+  reporting_freq_sec: 60
+  namespace: ""
+  stackdriver_projectid: ""
+  prometheus_port: 0
+  
+  database:
+  address:
+    - "root@postgres:5432"
+  max_idle_conns: 100
+  
+  runtime:
+  env:
+    - "example_apikey=example_apivalue"
+    - "encryptionkey=afasdsaefa1m_&&UIq"
+  path: "data/modules"
+  http_key: "admin_admin_admin"
+
+socket:
+  server_key: "admind3gflgn"
+  port: 7350
+
+session:
+  encryption_key: "keyggggg44enc_78"
+  token_expiry_sec: 64800
+
+social:
+  steam:
+    publisher_key: ""
+    app_id: 0
+
+console:
+  port: 7351
+  username: "mirbozorgi"
+  password: "arsalan_mirbozorgi346apssTm"
+  signing_key: "mirbozorgi_09dfgnsgoiufhllosgpdsy"
+
+
+cluster:
+  join:
+    - "10.0.0.2:7352"
+    - "10.0.0.3:7352"
+  gossip_bindaddr: "0.0.0.0"
+  gossip_bindport: 7352
+  rpc_port: 7353
